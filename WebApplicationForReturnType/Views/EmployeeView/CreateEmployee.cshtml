@@ -1,0 +1,54 @@
+﻿@model WebApplicationForReturnType.ViewModel.EmployeeDepartmentViewModel
+@{
+    ViewBag.Title = "CreateEmployee";
+}
+
+@using (Html.BeginForm("CreateEmployee", "EmployeeView", FormMethod.Post))
+{
+
+
+    <div class="form-group">
+        @Html.LabelFor(y => y.FirstName)
+        @Html.TextBoxFor(y => y.FirstName, new { @class = "form-control" })
+
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(y => y.LastName)
+        @Html.TextBoxFor(y => y.LastName, new { @class = "form-control" })
+
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(y => y.City)
+        @Html.TextBoxFor(y => y.City, new { @class = "form-control" })
+
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(y => y.State)
+        @Html.TextBoxFor(y => y.State, new { @class = "form-control" })
+
+    </div>
+
+
+    <div class="form-group">
+        @Html.LabelFor(y => y.ZipCode)
+        @Html.TextBoxFor(y => y.ZipCode, new { @class = "form-control" })
+
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(y => y.DepartmentId)
+        @Html.DropDownListFor(y => y.DepartmentId,Model.Data, new { @class = "form-control" })
+
+    </div>
+
+
+
+    <input type="submit"  value="Save"/>
+
+
+
+}
+

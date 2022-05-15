@@ -29,7 +29,7 @@
     <td>@r.State</td>
     <td>@r.ZipCode</td>
     <td>@r.DepartmentName</td>
-    <td>Delete</td>
+    <td><a href="@Url.Action("DeleteEmployeInfo","EmployeeView", new {employeeId = r.EmployeeId})"> Delete</a></td>
     <td>Edit</td>
 
 </tr>

@@ -11,6 +11,10 @@ namespace WebApplicationForReturnType.Interface
     {
          List<EmployeeDepartmentViewModel> GetEmployeeDepartmentList();
 
+         bool DeleteEmployeeInformation(int employeeId);
+
+
+         bool AddEmployeeInformation(EmployeeDepartmentViewModel employeeDepartmentViewModel);
 
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace WebApplicationForReturnType.ViewModel
 {
@@ -24,6 +25,8 @@ namespace WebApplicationForReturnType.ViewModel
         public int DepartmentId { get; set; }
 
         public string DepartmentName { get; set; }
+
+        public List<SelectListItem> Data { get; set; }
 
 
 
